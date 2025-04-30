@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Cat Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #444;
+            font-size: 2.5rem;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item .caption {
+            padding: 15px;
+        }
+        .gallery-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .gallery-item p {
+            color: #666;
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+        }
+        .placeholder-img {
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.2rem;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Delightful Cat Gallery</h1>
+        </header>
+
+        <div class="intro">
+            <p>Cats have captivated humans for centuries with their grace, playfulness, and mysterious nature. This gallery celebrates the beauty and charm of our feline friends through a collection of delightful cat photographs.</p>
+            <p>Inspired by LIFE Magazine's iconic cat photography from the 20th century.</p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 1</div>
+                <div class="caption">
+                    <h3>Curious Kitten</h3>
+                    <p>A curious kitten exploring its surroundings with wide-eyed wonder.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 2</div>
+                <div class="caption">
+                    <h3>Sleepy Siamese</h3>
+                    <p>A Siamese cat enjoying a peaceful afternoon nap in a sunbeam.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 3</div>
+                <div class="caption">
+                    <h3>Playful Tabby</h3>
+                    <p>A tabby cat in mid-pounce, showing off its natural hunting instincts.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 4</div>
+                <div class="caption">
+                    <h3>Regal Persian</h3>
+                    <p>A Persian cat displaying its majestic fluff and dignified posture.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 5</div>
+                <div class="caption">
+                    <h3>Mischievous Maine Coon</h3>
+                    <p>A Maine Coon with a mischievous glint in its eyes, planning its next adventure.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="placeholder-img">Cat Image 6</div>
+                <div class="caption">
+                    <h3>Contented Calico</h3>
+                    <p>A calico cat purring contentedly while being petted by its owner.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Note: This gallery uses placeholder images. In a real implementation, you would replace these with actual cat photographs.</p>
+            <p>Inspired by LIFE Magazine's "Twenty-five Delightful Pictures of Cats" collection.</p>
+            <p>&copy; 2023 Cat Gallery. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
